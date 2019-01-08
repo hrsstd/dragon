@@ -32,6 +32,10 @@ public class HomeController {
         return "find";
     }
 
+    @RequestMapping("/get/{id}/")
+    public String getById(){
+        return "get";
+    }
 
     @RequestMapping("/get")
     public String get(){
