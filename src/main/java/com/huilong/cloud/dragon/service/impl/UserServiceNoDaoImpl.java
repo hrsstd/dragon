@@ -41,4 +41,9 @@ public class UserServiceNoDaoImpl implements UsersService {
     public Boolean delete(Integer id) {
         return Boolean.TRUE;
     }
+
+    @Override
+    public String getProperties() {
+        return null;
+    }
 }

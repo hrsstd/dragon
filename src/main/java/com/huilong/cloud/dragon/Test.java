@@ -83,4 +83,9 @@ class UserServiceImpl implements UsersService {
     public Boolean delete(Integer id) {
         return null;
     }
+
+    @Override
+    public String getProperties() {
+        return null;
+    }
 }

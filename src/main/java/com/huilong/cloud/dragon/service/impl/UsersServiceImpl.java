@@ -9,6 +9,7 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 /**
@@ -18,6 +19,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UsersServiceImpl implements UsersService {
+    @Value("${spring.datasource.type}")
+    private String datasourceType;
 
     @Resource
     private UsersDAO usersDAO;
@@ -58,6 +61,12 @@ public class UsersServiceImpl implements UsersService {
     public Boolean delete(Integer id) {
         int result = usersDAO.delete(id);
         return result >0 ? true :false;
+    }
+
+    @Override
+    public String getProperties() {
+
+        return datasourceType;
     }
 
 }

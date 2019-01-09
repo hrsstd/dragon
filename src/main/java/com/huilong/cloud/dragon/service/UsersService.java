@@ -23,4 +23,6 @@ public interface UsersService {
 
     Boolean delete(Integer id);
 
+    String getProperties();
+
 }

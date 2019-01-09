@@ -1,4 +1,0 @@
-application:
-  name: dragon
-  locations:
-  - config/application.properties
