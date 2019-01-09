@@ -10,6 +10,11 @@ public class TestGitPush {
     public static void main(String[] args) {
         System.out.println("git commit first");
         System.out.println("git push");
+
+        // 2
+        System.out.println("git commit second");
+        System.out.println("git push");
+
     }
 
 }
